@@ -1,0 +1,103 @@
+{% load static  %}
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.0/css/mdb.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("{% static  'retina.jpg' %}");
+            background-size: 100% auto;
+        }
+
+        .card {
+            width: 800px;
+            transform: translate(-50%);
+            margin-top: 3%;
+            left: 50%;
+            background-color: rgba(124, 162, 167, 0.7);
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+        <a class="navbar-brand" href="#">SKIN CANCER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'dashboard' %}">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fas fa-user"></i>{{name}}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-haspopup="true" aria-expanded="false" href="{% url 'logout' %}">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card hoverable p-4">
+            <span class="badge badge-primary" style="margin-left:-3%;width: 800px;height:60px;">
+                <h1 style="text-align: center;">RESULT</h1>
+            </span>
+            <div class="row" style="width: 100%;">
+                <div style="margin-left: 0%;text-align:center">
+                    <h2 style="font-weight: bold;margin-left:0%;margin-top:5%;text-align:center;">{{result}}</h2><br>
+                    <h2 style="font-weight: bold;margin-left:0%;margin-top:-2%;text-align:center;">{{description}}</h2><br>
+                    <h3 style="font-weight: bold;margin-left:0%;margin-top:5%;text-align:center;">Your input image is :</h3>
+                    <img style="height: 300px;width: 400px;" src="{% static 'img/result.jpg' %}" />
+                    <h3><a href="{% url 'dashboard' %}" style="margin-left:0%;color:black;font-style:bold;"><i
+                                class="far fa-arrow-alt-circle-left" style="margin-top:4%;"></i>Back</a></h3>
+                </div>
+            </div><br><br>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.0/js/mdb.min.js"></script>
+
+
+</body>
+
+</html>

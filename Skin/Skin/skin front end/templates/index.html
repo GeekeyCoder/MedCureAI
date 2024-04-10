@@ -1,0 +1,120 @@
+{% load static  %}
+<html>
+
+<head>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.0/css/mdb.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("{% static  'retina.jpg' %}");
+            background-size: 100% auto;
+        }
+
+        .card {
+            width: 800px;
+            transform: translate(-50%);
+            margin-top: 5%;
+            left: 50%;
+            background-color: rgba(124, 162, 167,0.7);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+        <a class="navbar-brand" href="#">SKIN CANCER </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fas fa-user"></i>{{name}}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-haspopup="true" aria-expanded="false" href="{% url 'logout' %}">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card hoverable p-5">
+            <form action="{% url 'submit' %}" method="POST" enctype='multipart/form-data' >
+                <div class="row">
+                    <span class="badge badge-primary" style="width:800px;height:60px;">
+                        <h1 style="font-weight: bold;">SKIN CANCER DETECTION</h1>
+                    </span>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <button class="btn btn-primary"> <input type="file" name="image"/></button>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="btn btn-primary" id="submit" type="submit" value="Submit" >
+                        <div class="loader" style="display:none;">
+                            <div class="spinner-grow text-primary" role="status">
+                            </div>
+                            <div class="spinner-grow text-secondary" role="status">
+                            </div>
+                            <div class="spinner-grow text-success" role="status">
+                            </div>
+                            <div class="spinner-grow text-danger" role="status">
+                            </div>
+                            <div class="spinner-grow text-warning" role="status">
+                            </div>
+                            <div class="spinner-grow text-info" role="status">
+                            </div>
+                            <div class="spinner-grow text-light" role="status">
+                            </div>
+                            <div class="spinner-grow text-dark" role="status">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.0/js/mdb.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#submit').click(function(e){
+                $('#submit').hide();
+                $('.loader').show();
+            })
+        });
+    </script>
+</body>
+
+</html>
