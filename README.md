@@ -22,6 +22,6 @@ Below are the libraries that are used in the making of this project:
 
 
 ## Contact
-For any inquiries or feedback, please contact us at ayushh.goell@gmail.com
+For any inquiries or feedback, please contact us at goel86886@gmail.com
 
 
