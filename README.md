@@ -10,6 +10,7 @@ MedCureAI is a Flask application that utilizes AI and ML algorithms to detect sk
 
 
 ### System Requirements
+
 Below are the libraries that are used in the making of this project:
 
 - Flask
