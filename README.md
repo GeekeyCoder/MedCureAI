@@ -9,7 +9,7 @@ MedCureAI is a Flask application that utilizes AI and ML algorithms to detect sk
 - Data Privacy and Security: MedCureAI prioritizes data privacy and security, ensuring that patient information is handled with the utmost confidentiality and adheres to industry standards.
 
 
-### System Requirements
+## System Requirements
 
 Below are the libraries that are used in the making of this project:
 
