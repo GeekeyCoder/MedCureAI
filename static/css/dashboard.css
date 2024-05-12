@@ -17,8 +17,16 @@ body {
     justify-content: center;
 
 }
+div p{
+    margin-right : 2em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    color: #FFF;
+
+ }
 
 div img {
+    margin-top: 100px;
     width: 350px;
     position: relative;
     bottom: 70px;

@@ -4,7 +4,6 @@ let chosenImage = document.getElementById
   ("chosen-image");
 var resultContainer = document.getElementById('result-container');
 
-
 resultContainer.style.display = "none"
 uploadButton.onchange = () => {
   let reader = new FileReader();
