@@ -85,8 +85,10 @@ function displayResponse(response) {
   var mapButton = document.createElement("button");
   mapButton.className = "mapButton"; 
   mapButton.innerHTML = "Look for Clinics";
-  var body = document.getElementsByTagName("body")[0];
-  body.appendChild(mapButton);
+  // var body = document.getElementsByTagName("body")[0];
+  // body.appendChild(mapButton);
+  // console.log(body);
+  resultContainer.appendChild(mapButton);
 
   mapButton.addEventListener ("click", function() {
   //window.open(map.html);
