@@ -8,6 +8,19 @@ MedCureAI is a Flask application that utilizes AI and ML algorithms to detect sk
 - User-Friendly Interface: MedCureAI offers an intuitive and easy-to-use interface, making it accessible for both medical professionals and patients.
 - Data Privacy and Security: MedCureAI prioritizes data privacy and security, ensuring that patient information is handled with the utmost confidentiality and adheres to industry standards.
 
+## Used Technologies
+
+<p>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=css,github,html,js,py,tensorflow,vscode&perline=14" />
+    <img/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" width="47" height="47" 
+      style="height:47px;width:auto;border-radius:8rem;overflow: hidden"/>
+      
+    
+  </a>
+</p>
+
 
 ## System Requirements
 
@@ -21,6 +34,15 @@ Below are the libraries that are used in the making of this project:
 - tensorflow
 - numpy
 
+## Running Project Screenshots
+
+![Welcome Page](/SS1.jpg)
+
+![Home Page](/SS1.jpg)
+
+![upload file](/SS1.jpg)
+
+![Detected Disease](/SS1.jpg)
 
 ## Contact
 For any inquiries or feedback, please contact us at goel86886@gmail.com
