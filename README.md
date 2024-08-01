@@ -38,11 +38,11 @@ Below are the libraries that are used in the making of this project:
 
 ![Welcome Page](/SS1.jpg)
 
-![Home Page](/SS1.jpg)
+![Home Page](/SS2.jpg)
 
-![upload file](/SS1.jpg)
+![upload file](/SS3.jpg)
 
-![Detected Disease](/SS1.jpg)
+![Detected Disease](/SS4.png)
 
 ## Contact
 For any inquiries or feedback, please contact us at goel86886@gmail.com
